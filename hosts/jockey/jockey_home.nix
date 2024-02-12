@@ -3,17 +3,31 @@
 {
 
   imports = [
+    # Use Hyprland as DE
+    ../../home/environments/hyprland
+    ../../home/gtk.nix
+
+    # Needed programs
+    ../../home/waybar
+    ../../home/rofi
+    ../../home/messaging.nix
+    ../../home/firefox.nix
     ../../home/utils.nix
     ../../home/git.nix
+    ../../home/media.nix
+    ../../home/xdg.nix
     ../../home/nvim
+    ../../home/spotify.nix
+    ../../home/gaming.nix
     ../../home/shell
+    ../../home/security.nix
     ../../home/ssh.nix
   ];
 
   # Change your username ! 
   home = {
-    username = "antoine";
-    homeDirectory = "/home/antoine";
+    username = "max";
+    homeDirectory = "/home/max";
 
     # This value determines the Home Manager release that your
     # configuration is compatible with. This helps avoid breakage

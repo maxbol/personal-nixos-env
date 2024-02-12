@@ -9,27 +9,31 @@
       (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "sd_mod" ];
+
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-intel" ];
+  boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
+  
+  boot.kernelParams = [
+    "hid-apple.fnmode=2"
+    "hid-apple.iso_layout=1"
+    "hid-apple.swap_opt_cmd=1"
+  ];
 
   fileSystems."/" =
-    {
-      device = "/dev/disk/by-uuid/24ecc22d-4050-4edd-8a34-8eff45463083";
+    { device = "/dev/disk/by-uuid/80993f19-9fe6-4cb7-8404-52bc1ae2e38d";
       fsType = "ext4";
     };
 
+  boot.initrd.luks.devices."luks-b5abd2a3-ba5d-4b06-a8e9-034e3cd5b138".device = "/dev/disk/by-uuid/b5abd2a3-ba5d-4b06-a8e9-034e3cd5b138";
+
   fileSystems."/boot" =
-    {
-      device = "/dev/disk/by-uuid/9A91-48C8";
+    { device = "/dev/disk/by-uuid/ECAC-06FA";
       fsType = "vfat";
     };
 
-  swapDevices = [ {
-    device = "/var/lib/swapfile";
-    size = 16*1024;
-  } ];
+  swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

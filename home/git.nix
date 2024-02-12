@@ -7,13 +7,8 @@
     enable = true;
     package = pkgs.gitAndTools.gitFull;
 
-    userName = "Morantoine";
-    userEmail = "antoine.moran@protonmail.com";
-
-    signing = {
-      key = "C9BB0E3CE9F8C38ED3CC950D30CE7F957BD7DA57";
-      signByDefault = true;
-    };
+    userName = "Max Bolotin";
+    userEmail = "maks.bolotin@gmail.com";
 
     aliases = {
       adog = "log --all --decorate --oneline --graph";

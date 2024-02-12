@@ -26,7 +26,7 @@
     };
   };
 
-  networking.hostName = "balrog"; # Change your hostname.
+  networking.hostName = "jockey"; # Change your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -40,9 +40,9 @@
 
   services.syncthing = {
     enable = true;
-    user = "antoine";
-    dataDir = "/home/antoine";
-    configDir = "/home/antoine/.config/syncthing";
+    user = "max";
+    dataDir = "/home/max";
+    configDir = "/home/max/.config/syncthing";
   };
 
   # This value determines the NixOS release from which the default

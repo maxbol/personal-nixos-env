@@ -1,5 +1,5 @@
 {
-  description = "Antoine's Nix/NixOS config";
+  description = "Max's first NixOS setup";
 
   nixConfig = {
     extra-experimental-features = [ "nix-command" "flakes" ];
@@ -65,13 +65,12 @@
     }: {
       nixosConfigurations = {
         # My hostname, don't forget to change it !
-        balrog = nixpkgs.lib.nixosSystem {
+        jockey = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           # Load configuration
           modules = [
-
-            ./hosts/balrog
+            ./hosts/jockey
             sops-nix.nixosModules.sops
 
             # Load Home Manager
@@ -85,31 +84,7 @@
               # Change the username !
               home-manager.extraSpecialArgs = { inherit inputs; };
               # home-manager.extraSpecialArgs = inputs;
-              home-manager.users.antoine = import ./hosts/balrog/balrog_home.nix;
-            }
-          ];
-        };
-        rattlesnake = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = { inherit inputs; };
-          # Load configuration
-          modules = [
-
-            ./hosts/rattlesnake
-            sops-nix.nixosModules.sops
-
-            # Load Home Manager
-            home-manager.nixosModules.home-manager
-            {
-              nixpkgs.overlays = [ inputs.neovim-nightly-overlay.overlay ];
-
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-
-              # Change the username !
-              home-manager.extraSpecialArgs = { inherit inputs; };
-              # home-manager.extraSpecialArgs = inputs;
-              home-manager.users.antoine = import ./hosts/rattlesnake/rattlesnake_home.nix;
+              home-manager.users.max = import ./hosts/jockey/jockey_home.nix;
             }
           ];
         };
