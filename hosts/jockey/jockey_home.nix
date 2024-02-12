@@ -22,6 +22,7 @@
     ../../home/shell
     ../../home/security.nix
     ../../home/ssh.nix
+    ../../home/vscode.nix
   ];
 
   # Change your username ! 
