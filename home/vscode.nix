@@ -42,7 +42,7 @@ let
       name = "vscode-js-profile-flame";
       publisher = "ms-vscode";
       version = "1.0.8";
-      sha256 = "";
+      sha256 = "sha256-qgWWhpQ391EIKiLfLd0zA9MXxYlibg2G+N+/1BPPjMU=";
     }
     {
       name = "github-markdown-preview";
@@ -64,6 +64,7 @@ let
       name = "vscode-edge-devtools";
       publisher = "ms-edgedevtools";
       version = "2.1.4";
+      sha256 = "sha256-O3O03sYW3g3noEnhY1OqW5zjMsO33xDa/wP3X7TwPLc=";
     }
     {
       name = "vscode-sql-formatter";
@@ -75,6 +76,7 @@ let
       name = "ts-barrelr";
       publisher = "mikerhyssmith";
       version = "1.6.0";
+      sha256 = "sha256-zc21SVBH5meq4v1RxvSuoEWENyB/VGOa2WU4g0ysBM8=";
     }
   ];
 in
