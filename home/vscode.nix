@@ -12,7 +12,67 @@ let
       name = "azure-account";
       publisher = "ms-vscode";
       version = "0.11.6";
-      sha256 = "sha256-bLhlQxpZHhL3IHAqFxJEhe38/hIklBqCxBdXeKPBawI="
+      sha256 = "sha256-bLhlQxpZHhL3IHAqFxJEhe38/hIklBqCxBdXeKPBawI=";
+    }
+    {
+      name = "codesandbox-projects";
+      publisher = "codesandbox-io";
+      version = "0.2.124";
+      sha256 = "";
+    }
+    {
+      name = "d2";
+      publisher = "terrastruct";
+      version = "0.8.8";
+      sha256 = "";
+    }
+    {
+      name = "es6-string-css";
+      publisher = "bashmish";
+      version = "0.1.0";
+      sha256 = "";
+    }
+    {
+      name = "es6-string-html";
+      publisher = "tobermory";
+      version = "2.14.1";
+      sha256 = "";
+    }
+    {
+      name = "vscode-js-profile-flame";
+      publisher = "ms-vscode";
+      version = "1.0.8";
+      sha256 = "";
+    }
+    {
+      name = "github-markdown-preview";
+      publisher = "bierner";
+      version = "0.3.0";
+    }
+    {
+      name = "vscode-jest";
+      publisher = "orta";
+      version = "6.2.0";
+    }
+    {
+      name = "ksql";
+      publisher = "rmoff";
+      version = "0.1.4";
+    }
+    {
+      name = "vscode-edge-devtools";
+      publisher = "ms-edgedevtools";
+      version = "2.1.4";
+    }
+    {
+      name = "vscode-sql-formatter";
+      publisher = "adpyke";
+      version = "1.4.4";
+    }
+    {
+      name = "ts-barrelr";
+      publisher = "mikerhyssmith";
+      version = "1.6.0";
     }
   ];
 in
@@ -27,7 +87,25 @@ in
           separateDebugInfo = true;
         }))
         ms-azuretools.vscode-docker
-        ms-vscode-remote.remote-ssh
+        ms-vscode-remote.remote-ssh,
+        xaver.clang-format,
+        ms-vscode-remote.remote-containers,
+        mikestead.dotenv,
+        elixir-lsp.vscode-elixir-ls,
+        dbaeumer.vscode-eslint,
+        tamasfe.even-better-toml,
+        mhutchie.git-graph,
+        github.codespaces,
+        github.vscode-pull-request-github,
+        golang.go,
+        graphql.vscode-graphql,
+        graphql.vscode-graphql-syntax,
+        eamodio.gitlens,
+        ms-kubernetes-tools.vscode-kubernetes-tools,
+        ms-vscode.live-server,
+        ms-vsliveshare.vsliveshare,
+        esbenp.prettier-vscode,
+        zxh404.vscode-proto3
       ] ++ marketplaceExtensions;
     userSettings = let fontSize = 12; in {
       "workbench.colorTheme" = "Tokyo Night";
