@@ -36,7 +36,7 @@ let
       name = "es6-string-html";
       publisher = "tobermory";
       version = "2.14.1";
-      sha256 = "";
+      sha256 = "sha256-l0WQOHrZse6ezrRO3aUaGnlT4oCpt8fkXRPmnRst+Xw=";
     }
     {
       name = "vscode-js-profile-flame";
