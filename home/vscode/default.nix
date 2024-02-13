@@ -123,6 +123,6 @@ in
         zxh404.vscode-proto3
       ] ++ marketplaceExtensions;
 
-     userSettings = builtins.fromJSON ( builtins.readFile ./vscode-user-settings.json );
+     #userSettings = builtins.fromJSON ( builtins.readFile ./vscode-user-settings.json );
   };
 }
