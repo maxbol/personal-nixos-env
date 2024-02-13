@@ -18,7 +18,7 @@ let
       name = "codesandbox-projects";
       publisher = "codesandbox-io";
       version = "0.2.124";
-      sha256 = "";
+      sha256 = "sha256-Y2Rf/WykoooFJ5oeVWyFonNuDwRIqt2S05xSsBO6Hzw=";
     }
     {
       name = "d2";
@@ -30,7 +30,7 @@ let
       name = "es6-string-css";
       publisher = "bashmish";
       version = "0.1.0";
-      sha256 = "";
+      sha256 = "sha256-PrH0rw1rbL8oXRPvGRCH7R9C1zwlXXi5mID85f9wNUE=";
     }
     {
       name = "es6-string-html";
@@ -48,6 +48,7 @@ let
       name = "github-markdown-preview";
       publisher = "bierner";
       version = "0.3.0";
+      sha256 = " sha256-7pbl5OgvJ6S0mtZWsEyUzlg+lkUhdq3rkCCpLsvTm4g=";
     }
     {
       name = "vscode-jest";
@@ -68,6 +69,7 @@ let
       name = "vscode-sql-formatter";
       publisher = "adpyke";
       version = "1.4.4";
+      sha256 = "sha256-g4oqB0zV7jB7PeA/d2e8jKfHh+Ci+us0nK2agy1EBxs=";
     }
     {
       name = "ts-barrelr";
@@ -87,24 +89,24 @@ in
           separateDebugInfo = true;
         }))
         ms-azuretools.vscode-docker
-        ms-vscode-remote.remote-ssh,
-        xaver.clang-format,
-        ms-vscode-remote.remote-containers,
-        mikestead.dotenv,
-        elixir-lsp.vscode-elixir-ls,
-        dbaeumer.vscode-eslint,
-        tamasfe.even-better-toml,
-        mhutchie.git-graph,
-        github.codespaces,
-        github.vscode-pull-request-github,
-        golang.go,
-        graphql.vscode-graphql,
-        graphql.vscode-graphql-syntax,
-        eamodio.gitlens,
-        ms-kubernetes-tools.vscode-kubernetes-tools,
-        ms-vscode.live-server,
-        ms-vsliveshare.vsliveshare,
-        esbenp.prettier-vscode,
+        ms-vscode-remote.remote-ssh
+        xaver.clang-format
+        ms-vscode-remote.remote-containers
+        mikestead.dotenv
+        elixir-lsp.vscode-elixir-ls
+        dbaeumer.vscode-eslint
+        tamasfe.even-better-toml
+        mhutchie.git-graph
+        github.codespaces
+        github.vscode-pull-request-github
+        golang.go
+        graphql.vscode-graphql
+        graphql.vscode-graphql-syntax
+        eamodio.gitlens
+        ms-kubernetes-tools.vscode-kubernetes-tools
+        ms-vscode.live-server
+        ms-vsliveshare.vsliveshare
+        esbenp.prettier-vscode
         zxh404.vscode-proto3
       ] ++ marketplaceExtensions;
     userSettings = let fontSize = 12; in {
