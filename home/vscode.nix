@@ -196,6 +196,5 @@ in
     “editor.fontFamily”: “‘JetBrainsMono Nerd Font Mono’, Menlo, Monaco, ‘Courier New’, monospace”
 } 
     '';
-    };
   };
 }
