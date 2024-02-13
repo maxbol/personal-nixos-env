@@ -12,6 +12,7 @@ let
       name = "azure-account";
       publisher = "ms-vscode";
       version = "0.11.6";
+      sha256 = "sha256-bLhlQxpZHhL3IHAqFxJEhe38/hIklBqCxBdXeKPBawI="
     }
   ];
 in
