@@ -48,7 +48,7 @@ let
       name = "github-markdown-preview";
       publisher = "bierner";
       version = "0.3.0";
-      sha256 = " sha256-7pbl5OgvJ6S0mtZWsEyUzlg+lkUhdq3rkCCpLsvTm4g=";
+      sha256 = "sha256-7pbl5OgvJ6S0mtZWsEyUzlg+lkUhdq3rkCCpLsvTm4g=";
     }
     {
       name = "vscode-jest";
