@@ -80,6 +80,11 @@ let
       version = "1.6.0";
       sha256 = "sha256-zc21SVBH5meq4v1RxvSuoEWENyB/VGOa2WU4g0ysBM8=";
     }
+    {
+      name = "noctis-high-contrast";
+      publisher = "kamen";
+      version = "10.39.1";
+    }
   ];
 in
 {
