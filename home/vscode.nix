@@ -59,6 +59,7 @@ let
       name = "ksql";
       publisher = "rmoff";
       version = "0.1.4";
+      sha256 = "sha256-nAfj4GMyBWchp/6ufsoBcu3Cy15+7nGp56rRQ041tX4=";
     }
     {
       name = "vscode-edge-devtools";
