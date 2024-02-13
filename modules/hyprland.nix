@@ -52,6 +52,8 @@
     gnome.seahorse
   ];
 
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   # Fix locking problem
   security.pam.services.swaylock = { };
 
