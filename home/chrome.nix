@@ -2,7 +2,7 @@
 , config
 , ...
 }: {
-  home.packages = [
+  home.packages = with pkgs; [
     google-chrome
   ];
 }
