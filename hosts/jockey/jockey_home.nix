@@ -24,6 +24,7 @@
     ../../home/vscode.nix
     ../../home/chrome.nix
     ../../home/kubernetes.nix
+    ../../home/slack.nix
   ];
 
   # Change your username ! 
