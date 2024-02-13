@@ -6,8 +6,9 @@
     # Use Hyprland as DE
     ../../home/environments/hyprland
     ../../home/gtk.nix
-
+    
     # Needed programs
+    ../../home/vscode
     ../../home/waybar
     ../../home/rofi
     ../../home/messaging.nix
@@ -21,7 +22,6 @@
     ../../home/shell
     ../../home/security.nix
     ../../home/ssh.nix
-    ../../home/vscode.nix
     ../../home/chrome.nix
     ../../home/kubernetes.nix
     ../../home/slack.nix
