@@ -121,7 +121,7 @@
     isNormalUser = true;
     description = "Max Bolotin";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
 
   # Auto-cleaning

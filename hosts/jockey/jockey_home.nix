@@ -23,6 +23,7 @@
     ../../home/ssh.nix
     ../../home/vscode.nix
     ../../home/chrome.nix
+    ../../home/kubernetes.nix
   ];
 
   # Change your username ! 
