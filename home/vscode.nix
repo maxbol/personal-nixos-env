@@ -9,16 +9,9 @@ let
       sha256 = "sha256-Vk6wIGMzWPpv+A4vnHWAYnxTFYQBpVYZNu1BRim/TN0=";
     }
     {
-      name = "black-formatter";
-      publisher = "ms-python";
-      version = "2022.7.13271013";
-      sha256 = "sha256-wXAIPrk52L9xZNY3bitMUaUNl5q0iCNmRKK+Z/ZHmsU=";
-    }
-    {
-      name = "copilot";
-      publisher = "GitHub";
-      version = "1.73.8685";
-      sha256 = "sha256-W1j1VAuSM1sgxHRIahqVncUlknT+MPi7uutY+0NURZQ=";
+      name = "azure-account";
+      publisher = "ms-vscode";
+      version = "0.11.6";
     }
   ];
 in
