@@ -114,9 +114,8 @@ in
         zxh404.vscode-proto3
       ] ++ marketplaceExtensions;
 
-    userSettings = builtins.fromJSON ''
-{
-    "omnisharp.useGlobalMono":"always",
+    userSettings = builtins.fromJSON ''{
+  "omnisharp.useGlobalMono":"always",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -194,7 +193,6 @@ in
     "codesandbox.currentWorkspace": "d47959d1-a1b4-4c97-a25f-c6d4d1bfcc5b",
     "vscode-edge-devtools.browserFlavor": "Default",
     "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace"
-}
-    '';
+}'';
   };
 }
