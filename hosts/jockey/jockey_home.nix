@@ -11,7 +11,6 @@
     ../../home/waybar
     ../../home/rofi
     ../../home/messaging.nix
-    ../../home/firefox.nix
     ../../home/utils.nix
     ../../home/git.nix
     ../../home/media.nix
@@ -23,6 +22,7 @@
     ../../home/security.nix
     ../../home/ssh.nix
     ../../home/vscode.nix
+    ../../home/chrome.nix
   ];
 
   # Change your username ! 
