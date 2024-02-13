@@ -24,7 +24,7 @@ let
       name = "d2";
       publisher = "terrastruct";
       version = "0.8.8";
-      sha256 = "";
+      sha256 = "sha256-nnljLG2VL7r8bu+xFOTBx5J2UBsdjOwtAzDDXKtK0os=";
     }
     {
       name = "es6-string-css";
