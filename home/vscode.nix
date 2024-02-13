@@ -54,6 +54,7 @@ let
       name = "vscode-jest";
       publisher = "orta";
       version = "6.2.0";
+      sha256 = "sha256-nAfj4GMyBWchp/6ufsoBcu3Cy15+7nGp56rRQ041tX4=";
     }
     {
       name = "ksql";
