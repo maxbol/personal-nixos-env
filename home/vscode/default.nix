@@ -93,6 +93,13 @@ in
     enable = true;
 
     #package = pkgs.vscodium;
+    package = (pkgs.vscode.override{ isInsiders = true; }).overrideAttrs (oldAttrs: rec {
+      src = (builtins.fetchTarball {
+        url = "https://update.code.visualstudio.com/latest/linux-x64/insider";
+        sha256 = "1cvyaxf1grmilvi0rnfi2qs8qmk9z2b1im6pp2c64barb4733vh5";
+      });
+      version = "latest";
+    });
     
     extensions = with pkgs.vscode-extensions;
       [
