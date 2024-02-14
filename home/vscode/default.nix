@@ -92,7 +92,7 @@ in
   programs.vscode = {
     enable = true;
 
-    package = pkgs.vscode.fhs;
+    package = pkgs.vscodium;
     
     extensions = with pkgs.vscode-extensions;
       [
