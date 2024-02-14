@@ -35,7 +35,7 @@
       noto-fonts-extra
 
       # nerdfonts
-      (nerdfonts.override { fonts = [ "Hack" ]; })
+      (nerdfonts.override { fonts = [ "Hack" "JetBrainsMono" ]; })
     ];
 
     # use fonts specified by user rather than default ones

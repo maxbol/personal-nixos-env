@@ -76,5 +76,6 @@
     "barrelr.lineEnding": "LF",
     "codesandbox.currentWorkspace": "d47959d1-a1b4-4c97-a25f-c6d4d1bfcc5b",
     "vscode-edge-devtools.browserFlavor": "Default",
-    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "window.titleBarStyle": "custom"
 }
