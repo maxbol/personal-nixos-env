@@ -87,19 +87,19 @@ let
       sha256 = "sha256-lwarnLMCjEBTeWaJdNjVKvUaLwK6nDVx39HQjO1Mz3k=";
     }
   ];
+  vscode-insiders = (pkgs.vscode.override{ isInsiders = true; }).overrideAttrs (oldAttrs: rec {
+    src = (builtins.fetchTarball {
+      url = "https://update.code.visualstudio.com/latest/linux-x64/insider";
+      sha256 = "03r0xqd94h13v25whnxhkq9pvhak26lvxz287c0247r0aymgfbik";
+    });
+    version = "latest";
+  });
 in
 {
   programs.vscode = {
     enable = true;
 
-    #package = pkgs.vscodium;
-    package = (pkgs.vscode.override{ isInsiders = true; }).overrideAttrs (oldAttrs: rec {
-      src = (builtins.fetchTarball {
-        url = "https://update.code.visualstudio.com/latest/linux-x64/insider";
-        sha256 = "03r0xqd94h13v25whnxhkq9pvhak26lvxz287c0247r0aymgfbik";
-      });
-      version = "latest";
-    });
+    package = vscode-insiders;
     
     extensions = with pkgs.vscode-extensions;
       [
