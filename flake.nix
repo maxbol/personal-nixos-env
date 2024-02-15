@@ -49,6 +49,7 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    azuredatastudio-nix.url = "https://github.com/justinwoo/azuredatastudio-nix";
   };
 
   outputs =
@@ -71,7 +72,8 @@
           # Load configuration
           modules = [
             ./hosts/jockey
-            sops-nix.nixosModules.sops
+            sops-nix.nixosModules.sops,
+            azuredatastudio,
 
             # Load Home Manager
             home-manager.nixosModules.home-manager
