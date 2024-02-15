@@ -25,6 +25,7 @@
     ../../home/chrome.nix
     ../../home/kubernetes.nix
     ../../home/slack.nix
+    ../../home/productivity.nix
   ];
 
   # Change your username ! 

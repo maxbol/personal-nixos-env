@@ -55,6 +55,9 @@ in
 
     # Audio visualizer
     cavalier
+
+    # VNC software
+    wayvnc
   ];
 
   # Enable bluetooth buttons support
