@@ -26,6 +26,7 @@
     ../../home/kubernetes.nix
     ../../home/slack.nix
     ../../home/productivity.nix
+    ../../home/calendar.nix
   ];
 
   # Change your username ! 

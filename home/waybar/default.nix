@@ -3,7 +3,7 @@
 , ...
 }: {
   home.packages = with pkgs; [
-    inotifytools
+    inotify-tools
   ];
 
   home.file.".config/waybar/config".source = ./config.json;
