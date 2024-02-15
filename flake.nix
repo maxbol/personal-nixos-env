@@ -72,8 +72,8 @@
           # Load configuration
           modules = [
             ./hosts/jockey
-            sops-nix.nixosModules.sops,
-            azuredatastudio,
+            sops-nix.nixosModules.sops
+            azuredatastudio
 
             # Load Home Manager
             home-manager.nixosModules.home-manager
