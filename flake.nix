@@ -62,6 +62,7 @@
     , neovim-nightly-overlay
     , xp-bot
     , sops-nix
+    , azuredatastudio-nix
     , ...
     }: {
       nixosConfigurations = {
@@ -73,7 +74,7 @@
           modules = [
             ./hosts/jockey
             sops-nix.nixosModules.sops
-            azuredatastudio
+            azuredatastudio-nix
 
             # Load Home Manager
             home-manager.nixosModules.home-manager
