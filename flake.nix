@@ -78,7 +78,10 @@
             # Load Home Manager
             home-manager.nixosModules.home-manager
             {
-              nixpkgs.overlays = [ inputs.neovim-nightly-overlay.overlay, sphinxcontrib-newsfeed-overlay ];
+              nixpkgs.overlays = [
+                inputs.neovim-nightly-overlay.overlay
+                sphinxcontrib-newsfeed-overlay
+              ];
 
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
