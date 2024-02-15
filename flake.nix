@@ -63,7 +63,9 @@
     , sops-nix
     , ...
     }: {
-      nixosConfigurations = {
+      nixosConfigurations = let
+        sphinxcontrib-newsfeed-overlay = import ./overlays/sphinxcontrib-newsfeed.nix;
+      in {
         # My hostname, don't forget to change it !
         jockey = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
@@ -76,7 +78,7 @@
             # Load Home Manager
             home-manager.nixosModules.home-manager
             {
-              nixpkgs.overlays = [ inputs.neovim-nightly-overlay.overlay ];
+              nixpkgs.overlays = [ inputs.neovim-nightly-overlay.overlay, sphinxcontrib-newsfeed-overlay ];
 
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
