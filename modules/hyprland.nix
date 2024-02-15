@@ -56,6 +56,7 @@
     wireplumber
     xwaylandvideobridge
     gnome.seahorse
+    wayvnc
   ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

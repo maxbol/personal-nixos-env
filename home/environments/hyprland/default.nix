@@ -34,6 +34,7 @@ in
   home.file.".wallpaper.jpg".source = ../../../wallpapers/current_wallpaper.jpg;
   home.file.".config/mako".source = ./mako_config;
   home.file.".config/hypr/pyprland.json".source = ./pyprland.json;
+  home.file.".config/hypr/vnc_start.sh".source = ./vnc_start.sh;
 
   home.packages = with pkgs; [
     # App launcher
@@ -55,9 +56,6 @@ in
 
     # Audio visualizer
     cavalier
-
-    # VNC software
-    wayvnc
   ];
 
   # Enable bluetooth buttons support
@@ -67,7 +65,4 @@ in
     Service.ExecStart = "${pkgs.bluez}/bin/mpris-proxy";
     Install.WantedBy = [ "default.target" ];
   };
-
-
-
 }

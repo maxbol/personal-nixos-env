@@ -23,6 +23,7 @@ exec-once = nm-applet
 exec-once = mako -c ~/.config/mako
 exec-once = blueman-applet
 exec-once =	wl-clip-persist --clipboard both
+exec-once = ~/.config/hypr/vnc_start.sh
 
 # Source a file (multi-file configs)
 # source = ~/.config/hypr/myColors.conf
