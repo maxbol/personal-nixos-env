@@ -62,10 +62,12 @@
     enable = true;
     settings = {
       X11Forwarding = true;
-      PasswordAuthentication = false; # disable password login
+      PasswordAuthentication = true; # temporarily enable pwd auth
     };
     openFirewall = true;
   };
+
+  services.tailscale.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -79,6 +81,7 @@
     git
     sops
     sysstat
+    tailscale
   ];
 
   # Enable sound with pipewire.
