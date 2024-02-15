@@ -56,9 +56,6 @@
         "vscode-kubernetes.minikube-path.mac": "/Users/maxbolotin/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
     },
     "editor.tabSize": 2,
-    "go.alternateTools": {
-        "go": "/opt/homebrew/bin/go"
-    },
     "githubPullRequests.pullBranch": "never",
     "D2.previewSketch": false,
     "D2.previewTheme": "Dark mauve",
@@ -68,7 +65,6 @@
     "editor.accessibilitySupport": "off",
     "scm.autoReveal": true,
     "editor.fontWeight": "500",
-    "D2.execPath": "/opt/homebrew/bin/d2",
     "jest.autoRun": {
         "watch": false
     },
@@ -77,5 +73,6 @@
     "codesandbox.currentWorkspace": "d47959d1-a1b4-4c97-a25f-c6d4d1bfcc5b",
     "vscode-edge-devtools.browserFlavor": "Default",
     "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
     "window.titleBarStyle": "custom"
 }
