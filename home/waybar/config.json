@@ -182,5 +182,16 @@
     "on-click-right": "makoctl restore",
     "exec": "printf '{\"alt\":\"%s\",\"tooltip\":\"mode: %s\"}' $(makoctl mode | grep -q 'do-not-disturb' && echo dnd || echo default) $(makoctl mode | tail -1)",
     "signal": 11
-  }
+  },
+  "custom/events": {
+    "format": "{} ",
+    "tooltip": true,
+    "interval": 120,
+    "format-icons": {
+        "default": ""
+    },
+    "exec": "$HOME/.config/waybar/khal.py",
+    "on-click": "kitty --class khal_float -e sh -c \"ikhal\"",
+    "return-type": "json"
+},
 }
