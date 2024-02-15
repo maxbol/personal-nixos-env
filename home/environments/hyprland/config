@@ -17,7 +17,7 @@ xwayland {
 exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec-once = swaybg -m fill -i ~/.wallpaper.png
 exec-once = ~/.config/ssh-auto-sock.sh
-exec-once = waybar
+exec-once = ~/.config/waybar/launch_waybar.sh
 exec-once = pypr
 exec-once = nm-applet
 exec-once = mako -c ~/.config/mako

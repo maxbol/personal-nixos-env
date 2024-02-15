@@ -19,6 +19,7 @@
     "sway/language",
     "battery",
     "battery#bat2",
+    "custom/events",
     "clock",
     "tray"
   ],
