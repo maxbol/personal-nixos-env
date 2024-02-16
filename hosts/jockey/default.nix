@@ -28,6 +28,24 @@
     };
   };
 
+  boot.initrd.systemd.enable = true;
+  boot.plymouth = {
+    enable = true;
+    theme = "breeze";
+  };
+
+  environment.systemPackages = with pkgs; [
+    plymouth
+    breeze-plymouth
+  ];
+
+  boot.kernelParams = [
+    "hid-apple.fnmode=2"
+    "hid-apple.iso_layout=1"
+    "hid-apple.swap_opt_cmd=1"
+    "quiet"
+  ];
+
   networking.hostName = "jockey"; # Change your hostname.
 
   # Enable networking
