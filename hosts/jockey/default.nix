@@ -11,6 +11,8 @@
       ../../modules/system.nix
       # Use Hyprland on my laptop !
       ../../modules/hyprland.nix
+      # Sync all calendars and contacts
+      ../../modules/vdirsyncer.nix
       # Incluse results of the hardware scan
       ./hardware-configuration.nix
     ];
