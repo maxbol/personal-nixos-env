@@ -1,9 +1,9 @@
 { config, pkgs, ... }:
 let
   contactsUuid = "ee85de46-1923-44ff-aa47-1494baa7cc4c";
-  khalConfig = callPackage config/khal.nix {};
-  khardConfig = callPackage config/khard.nix {};
-  vdirsyncerConfig = callPackage config/vdirsyncer.nix {};
+  khalConfig = pkgs.callPackage config/khal.nix {};
+  khardConfig = pkgs.callPackage config/khard.nix {};
+  vdirsyncerConfig = pkgs.callPackage config/vdirsyncer.nix {};
 in
 {
   home.packages = with pkgs; [
