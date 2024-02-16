@@ -11,6 +11,8 @@
     ../../home/vscode
     ../../home/waybar
     ../../home/rofi
+    ../../home/calendar
+    
     ../../home/messaging.nix
     ../../home/utils.nix
     ../../home/git.nix
@@ -26,7 +28,6 @@
     ../../home/kubernetes.nix
     ../../home/slack.nix
     ../../home/productivity.nix
-    ../../home/calendar.nix
   ];
 
   # Change your username ! 
