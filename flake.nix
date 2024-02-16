@@ -36,7 +36,6 @@
       url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgs-staging.url = "github:nixos/nixpkgs/staging";
     # Sops-Nix for secrets managing
     sops-nix = {
       url = "github:Mic92/sops-nix";

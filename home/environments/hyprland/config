@@ -52,6 +52,7 @@ input {
         natural_scroll = yes
         clickfinger_behavior = 1
         scroll_factor = 0.5
+        middle_button_emulation = false
     }
 
     sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
@@ -151,6 +152,8 @@ device:epic-mouse-v1 {
 # windowrulev2 = nofocus,class:^(xwaylandvideobridge)$
 # windowrulev2 = noinitialfocus,class:^(xwaylandvideobridge)$
 
+
+windowrulev2 = opacity 0.7,class:^(code-)(.*)$
 
 layerrule=noanim,selection
 

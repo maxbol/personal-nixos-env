@@ -174,10 +174,10 @@
   "custom/dnd": {
     "interval": "once",
     "return-type": "json",
-    "format": "{}{icon}",
+    "format": "{}{icon} ",
     "format-icons": {
       "default": "",
-      "dnd": " "
+      "dnd": ""
     },
     "on-click": "makoctl mode | grep 'do-not-disturb' && makoctl mode -r do-not-disturb || makoctl mode -a do-not-disturb; pkill -RTMIN+11 waybar",
     "on-click-right": "makoctl restore",

@@ -160,22 +160,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-staging": {
-      "locked": {
-        "lastModified": 1708063293,
-        "narHash": "sha256-D9C2yXIkL3xUWqkw8Uu8P4m4HasR/N97qcsuc8ny5M8=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "0de22f6645fa50eeec3908d9ec7ca2c1d300e42c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "staging",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1707978831,
@@ -198,7 +182,6 @@
         "hyprland": "hyprland",
         "hyprland-contrib": "hyprland-contrib",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-staging": "nixpkgs-staging",
         "sops-nix": "sops-nix",
         "spicetify-nix": "spicetify-nix"
       }

@@ -1,4 +1,4 @@
-{ config }: ''
+{ config, contactsUuid, ... }: ''
 [calendars]
 
 [[calendar_local]]

@@ -16,7 +16,9 @@ time_len = 12
 schedule_max_len = max_len - cal_indent_line
 cal_indent_line += cal_sep_len
 
-data = {}
+data = {
+    "class": "khal"
+}
 
 today = datetime.date.today().strftime("%Y-%m-%d")
 
@@ -87,7 +89,7 @@ for cal_line, new_line in itertools.zip_longest(cal_lines, new_lines):
     out_lines.append(out_line)
 output = "\n".join(out_lines).strip()
 
-locale.setlocale(locale.LC_TIME, "de_CH.utf8")
+locale.setlocale(locale.LC_TIME, "sv_SE.utf8")
 mytime = datetime.datetime.now().strftime("%H:%M")
 mydate = datetime.datetime.now().strftime("%Y-%m-%d %a")
 if today in output:

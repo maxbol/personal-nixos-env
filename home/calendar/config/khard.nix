@@ -1,4 +1,4 @@
-{ config, contactsUuid }: ''
+{ config, contactsUuid, ... }: ''
 [addressbooks]
 [[personal]]
 path = ~/${config.xdg.dataHome}/contacts/${contactsUuid}/
