@@ -19,7 +19,7 @@
   # A flake is basically a list of inputs/outputs in which inputs are built and sent as arguments to outputs
   inputs = {
     # Official NixOS packages URL
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     # Home manager for home-scoped config
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -36,14 +36,7 @@
       url = "github:hyprwm/contrib";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # Neovim-nightly
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     nixpkgs-staging.url = "github:nixos/nixpkgs/staging";
-    # XP-bot on Rattlesnake
-    xp-bot = {
-      url = "github:Morantoine/XP_Bot";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     # Sops-Nix for secrets managing
     sops-nix = {
       url = "github:Mic92/sops-nix";
@@ -58,14 +51,10 @@
     , spicetify-nix
     , home-manager
     , hyprland-contrib
-    , neovim-nightly-overlay
-    , xp-bot
     , sops-nix
     , ...
     }: {
-      nixosConfigurations = let
-        sphinxcontrib-newsfeed-overlay = import ./overlays/sphinxcontrib-newsfeed.nix;
-      in {
+      nixosConfigurations = {
         # My hostname, don't forget to change it !
         jockey = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
@@ -78,9 +67,8 @@
             # Load Home Manager
             home-manager.nixosModules.home-manager
             {
-              nixpkgs.overlays = [
-                inputs.neovim-nightly-overlay.overlay
-                sphinxcontrib-newsfeed-overlay
+              nixpkgs.config.permittedInsecurePackages = [
+                "electron-25.9.0"
               ];
 
               home-manager.useGlobalPkgs = true;
