@@ -41,6 +41,10 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    grub2-themes = {
+      url = "https://github.com/vinceliuice/grub2-themes/blob/master/flake.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -62,6 +66,7 @@
           modules = [
             ./hosts/jockey
             sops-nix.nixosModules.sops
+            grub2-themes.nixosModules
 
             # Load Home Manager
             home-manager.nixosModules.home-manager

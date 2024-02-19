@@ -26,6 +26,12 @@
       efiSupport = true;
       useOSProber = false;
     };
+    grub2-theme = {
+      enable = true;
+      theme = "whitesur";
+      icon = "whitesur";
+      screen = "ultrawide2k";
+    };
   };
 
   boot.initrd.systemd.enable = true;
@@ -42,7 +48,7 @@
   boot.kernelParams = [
     "hid-apple.fnmode=2"
     "hid-apple.iso_layout=1"
-    "hid-apple.swap_opt_cmd=1"
+    "hid-apple.swap_opt_cmd=0"
     "quiet"
   ];
 
