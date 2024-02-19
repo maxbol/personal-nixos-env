@@ -67,7 +67,7 @@
           modules = [
             ./hosts/jockey
             sops-nix.nixosModules.sops
-            grub2-themes.nixosModules
+            grub2-themes.nixosModules.default
 
             # Load Home Manager
             home-manager.nixosModules.home-manager

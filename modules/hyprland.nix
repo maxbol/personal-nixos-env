@@ -26,6 +26,7 @@
       wayland = true;
     };
 
+    exportConfiguration = true;
     videoDrivers = [ "nvidia" ];
   };
 
