@@ -159,15 +159,17 @@ layerrule=noanim,selection
 
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 $mainMod = SUPER
+$navMod = MOD3
+$launchMod = CTRL
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-bind = $mainMod, RETURN, exec, kitty
-bind = $mainMod, Q, killactive, 
-bind = $mainMod, V, togglefloating, 
-bind = $mainMod, SPACE, exec, rofi -show combi -config ~/.config/rofi/configs/rofidmenu.conf
-bind = $mainMod SHIFT, E, exec, ~/.config/rofi/configs/powermenu.sh
-bind = $mainMod, F, fullscreen
-bind = $mainMod, J, togglesplit, #dwindle
+bind = $launchMod, RETURN, exec, kitty
+bind = $launchMod, Q, killactive, 
+bind = $navMod, V, togglefloating, 
+bind = $launchMod, SPACE, exec, rofi -show combi -config ~/.config/rofi/configs/rofidmenu.conf
+bind = $launchMod SHIFT, E, exec, ~/.config/rofi/configs/powermenu.sh
+bind = $launchMod, F, fullscreen
+bind = $navMod, J, togglesplit, #dwindle
 
 # Fn keys
 bind = ,XF86AudioRaiseVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -181,64 +183,64 @@ bind = ,XF86AudioNext, exec, playerctl next
 bind = ,XF86AudioPrev, exec, playerctl previous
 
 # Tabbed layout
-bind = $mainMod, W, togglegroup,
-bind = $mainMod, Z, changegroupactive, b
-bind = $mainMod, X, changegroupactive, f
-bind = $mainMod SHIFT, W, moveoutofgroup
+bind = $navMod, W, togglegroup,
+bind = $navMod, Z, changegroupactive, b
+bind = $navMod, X, changegroupactive, f
+bind = $navMod SHIFT, W, moveoutofgroup
 
 # Move focus with mainMod + arrow keys
-bind = $mainMod, left, movefocus, l
-bind = $mainMod, right, movefocus, r
-bind = $mainMod, up, movefocus, u
-bind = $mainMod, down, movefocus, d
+bind = $navMod SHIFT, left, movefocus, l
+bind = $navMod SHIFT, right, movefocus, r
+bind = $navMod SHIFT, up, movefocus, u
+bind = $navMod SHIFT, down, movefocus, d
 
 # Cycle through windows 
-bind = ALT, TAB, cyclenext
+bind = $launchMod, TAB, cyclenext
 
 # Switch workspaces with mainMod + [0-9]
-bind = $mainMod, 1, workspace, 1
-bind = $mainMod, 2, workspace, 2
-bind = $mainMod, 3, workspace, 3
-bind = $mainMod, 4, workspace, 4
-bind = $mainMod, 5, workspace, 5
-bind = $mainMod, 6, workspace, 6
-bind = $mainMod, 7, workspace, 7
-bind = $mainMod, 8, workspace, 8
-bind = $mainMod, 9, workspace, 9
-bind = $mainMod, 0, workspace, 10
+bind = $navMod, 1, workspace, 1
+bind = $navMod, 2, workspace, 2
+bind = $navMod, 3, workspace, 3
+bind = $navMod, 4, workspace, 4
+bind = $navMod, 5, workspace, 5
+bind = $navMod, 6, workspace, 6
+bind = $navMod, 7, workspace, 7
+bind = $navMod, 8, workspace, 8
+bind = $navMod, 9, workspace, 9
+bind = $navMod, 0, workspace, 10
 
 # Move active window to a workspace with mainMod + SHIFT + [0-9]
-bind = $mainMod SHIFT, 1, movetoworkspace, 1
-bind = $mainMod SHIFT, 2, movetoworkspace, 2
-bind = $mainMod SHIFT, 3, movetoworkspace, 3
-bind = $mainMod SHIFT, 4, movetoworkspace, 4
-bind = $mainMod SHIFT, 5, movetoworkspace, 5
-bind = $mainMod SHIFT, 6, movetoworkspace, 6
-bind = $mainMod SHIFT, 7, movetoworkspace, 7
-bind = $mainMod SHIFT, 8, movetoworkspace, 8
-bind = $mainMod SHIFT, 9, movetoworkspace, 9
-bind = $mainMod SHIFT, 0, movetoworkspace, 10
+bind = $launchMod SHIFT, 1, movetoworkspace, 1
+bind = $launchMod SHIFT, 2, movetoworkspace, 2
+bind = $launchMod SHIFT, 3, movetoworkspace, 3
+bind = $launchMod SHIFT, 4, movetoworkspace, 4
+bind = $launchMod SHIFT, 5, movetoworkspace, 5
+bind = $launchMod SHIFT, 6, movetoworkspace, 6
+bind = $launchMod SHIFT, 7, movetoworkspace, 7
+bind = $launchMod SHIFT, 8, movetoworkspace, 8
+bind = $launchMod SHIFT, 9, movetoworkspace, 9
+bind = $launchMod SHIFT, 0, movetoworkspace, 10
 
 # Scroll through existing workspaces with mainMod + scroll
-bind = $mainMod, Tab, workspace, e+1
+bind = $navMod, Tab, workspace, e+1
 
 # Move/resize windows with keyboard
-bind = $mainMod SHIFT, left, movewindow, l
-bind = $mainMod SHIFT, right, movewindow, r
-bind = $mainMod SHIFT, up, movewindow, u
-bind = $mainMod SHIFT, down, movewindow, d
+bind = $launchMod SHIFT, left, movewindow, l
+bind = $launchMod SHIFT, right, movewindow, r
+bind = $launchMod SHIFT, up, movewindow, u
+bind = $launchMod SHIFT, down, movewindow, d
 
-bind = $mainMod ALT, right, resizeactive, 10 0
-bind = $mainMod ALT, left, resizeactive, -10 0
-bind = $mainMod ALT, up, resizeactive, 0 -10
-bind = $mainMod ALT, down, resizeactive, 0 10
+bind = $launchMod $navMod, right, resizeactive, 10 0
+bind = $launchMod $navMod, left, resizeactive, -10 0
+bind = $launchMod $navMod, up, resizeactive, 0 -10
+bind = $launchMod $navMod, down, resizeactive, 0 10
 
 # Move/resize windows with mouse
-bindm = $mainMod, mouse:272, movewindow
-bindm = $mainMod, mouse:273, resizewindow
+bindm = $launchMod, mouse:272, movewindow
+bindm = $launchMod, mouse:273, resizewindow
 
 # Send workspace to other monitor
-bind = $mainMod SHIFT, x, movecurrentworkspacetomonitor, +1
+bind = $launchMod SHIFT, x, movecurrentworkspacetomonitor, +1
 
 # Screenshots
 bind = , Print, exec, grimblast --notify copy
@@ -247,13 +249,13 @@ bind = CTRL, Print, exec, grimblast --notify --freeze copy area
 bind = CTRL SHIFT, Print, exec, grimblast --notify --freeze save area
 
 # Scratchbad bindings
-bind = $mainMod, S, exec, pypr toggle term
+bind = $navMod, S, exec, pypr toggle term
 $dropterm  = ^(dropterm)$
 windowrule = float,$dropterm
 windowrule = workspace special silent,$dropterm
 windowrule = size 75% 60%,$dropterm
 
 # Expose
-bind = $mainMod SHIFT, D, exec, pypr expose
-bind = $mainMod, M, exec, pypr toggle_minimized
-bind = $mainMod SHIFT, M, togglespecialworkspace, minimized
+bind = $navMod, up, exec, pypr expose
+bind = $navMod SHIFT, M, exec, pypr toggle_minimized
+bind = $launchMod SHIFT, M, togglespecialworkspace, minimized
