@@ -49,7 +49,7 @@ input {
 
     touchpad {
         natural_scroll = yes
-        cliAppropriate XKB keymap parameter. See the note below.	ckfinger_behavior = 1
+        clickfinger_behavior = 1
         scroll_factor = 0.5
         middle_button_emulation = false
     }
