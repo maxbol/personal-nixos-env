@@ -41,7 +41,7 @@ env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
 input {
     kb_layout = se
-    kb_variant = mac
+    #kb_variant = mac
     kb_model = macintosh
     kb_options = ctrl:swap_lwin_lctl,ctrl:swap_rwin_rctl
 
@@ -49,7 +49,7 @@ input {
 
     touchpad {
         natural_scroll = yes
-        clickfinger_behavior = 1
+        cliAppropriate XKB keymap parameter. See the note below.	ckfinger_behavior = 1
         scroll_factor = 0.5
         middle_button_emulation = false
     }
