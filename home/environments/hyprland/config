@@ -159,7 +159,7 @@ layerrule=noanim,selection
 
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 $mainMod = SUPER
-$navMod = MOD3
+$navMod = ALT
 $launchMod = CTRL
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
