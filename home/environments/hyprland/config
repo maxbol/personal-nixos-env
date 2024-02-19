@@ -15,7 +15,7 @@ xwayland {
 
 # Execute your favorite apps at launch
 exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec-once = swaybg -m fill -i ~/.wallpaper.png
+exec-once = swaybg -m fill -i ~/.wallpaper.jpg
 exec-once = ~/.config/ssh-auto-sock.sh
 exec-once = ~/.config/waybar/launch_waybar.sh
 exec-once = pypr
@@ -153,7 +153,7 @@ device:epic-mouse-v1 {
 # windowrulev2 = noinitialfocus,class:^(xwaylandvideobridge)$
 
 
-windowrulev2 = opacity 0.7,class:^(code-)(.*)$
+windowrulev2 = opacity 0.9,class:^(code-)(.*)$
 
 layerrule=noanim,selection
 
