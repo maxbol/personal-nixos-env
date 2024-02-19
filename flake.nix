@@ -42,7 +42,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     grub2-themes = {
-      url = "https://github.com/vinceliuice/grub2-themes/blob/master/flake.nix";
+      url = "github:vinceliuice/grub2-themes";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -55,6 +55,7 @@
     , home-manager
     , hyprland-contrib
     , sops-nix
+    , grub2-themes
     , ...
     }: {
       nixosConfigurations = {
