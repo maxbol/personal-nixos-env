@@ -50,6 +50,7 @@
     "hid-apple.iso_layout=1"
     "hid-apple.swap_opt_cmd=0"
     "quiet"
+    "video=DP-2:3440x1440@60"
   ];
 
   networking.hostName = "jockey"; # Change your hostname.
