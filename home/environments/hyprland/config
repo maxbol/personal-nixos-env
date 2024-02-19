@@ -158,17 +158,16 @@ layerrule=noanim,selection
 
 
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
-$mainMod = SUPER
-$navMod = ALT
+$navMod = SUPER
 $launchMod = CTRL
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 bind = $launchMod, RETURN, exec, kitty
-bind = $launchMod, Q, killactive, 
+bind = $launchMod SHIFT, Q, killactive, 
 bind = $navMod, V, togglefloating, 
 bind = $launchMod, SPACE, exec, rofi -show combi -config ~/.config/rofi/configs/rofidmenu.conf
 bind = $launchMod SHIFT, E, exec, ~/.config/rofi/configs/powermenu.sh
-bind = $launchMod, F, fullscreen
+bind = $launchMod SHIFT, F, fullscreen
 bind = $navMod, J, togglesplit, #dwindle
 
 # Fn keys
@@ -225,15 +224,15 @@ bind = $launchMod SHIFT, 0, movetoworkspace, 10
 bind = $navMod, Tab, workspace, e+1
 
 # Move/resize windows with keyboard
-bind = $launchMod SHIFT, left, movewindow, l
-bind = $launchMod SHIFT, right, movewindow, r
-bind = $launchMod SHIFT, up, movewindow, u
-bind = $launchMod SHIFT, down, movewindow, d
+bind = $launchMod $navMod, left, movewindow, l
+bind = $launchMod $navMod, right, movewindow, r
+bind = $launchMod $navMod, up, movewindow, u
+bind = $launchMod $navMod, down, movewindow, d
 
-bind = $launchMod $navMod, right, resizeactive, 10 0
-bind = $launchMod $navMod, left, resizeactive, -10 0
-bind = $launchMod $navMod, up, resizeactive, 0 -10
-bind = $launchMod $navMod, down, resizeactive, 0 10
+bind = $launchMod $navMod SHIFT, right, resizeactive, 10 0
+bind = $launchMod $navMod SHIFT, left, resizeactive, -10 0
+bind = $launchMod $navMod SHIFT, up, resizeactive, 0 -10
+bind = $launchMod $navMod SHIFT, down, resizeactive, 0 10
 
 # Move/resize windows with mouse
 bindm = $launchMod, mouse:272, movewindow
@@ -257,5 +256,5 @@ windowrule = size 75% 60%,$dropterm
 
 # Expose
 bind = $navMod, up, exec, pypr expose
-bind = $navMod SHIFT, M, exec, pypr toggle_minimized
+bind = $launchMod $navMod, M, exec, pypr toggle_minimized
 bind = $launchMod SHIFT, M, togglespecialworkspace, minimized
