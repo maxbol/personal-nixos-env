@@ -50,6 +50,9 @@
     "hid-apple.iso_layout=1"
     "hid-apple.swap_opt_cmd=0"
     "quiet"
+    "splash"
+    "loglevel=3"
+    "rd.udev.log_level=3"
     "video=DP-2:3440x1440@60"
   ];
 
