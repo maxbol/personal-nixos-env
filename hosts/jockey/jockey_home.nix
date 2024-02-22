@@ -14,6 +14,7 @@
     ../../home/waybar
 
     ../../home/chrome.nix
+    ../../home/cli.nix
     ../../home/development.nix
     ../../home/gaming.nix
     ../../home/git.nix
