@@ -45,7 +45,7 @@ input {
     kb_model = macintosh
     kb_options = ctrl:swap_lwin_lctl,ctrl:swap_rwin_rctl,lv3:alt_switch
 
-    follow_mouse = 0
+    follow_mouse = 2
 
     touchpad {
         natural_scroll = yes
