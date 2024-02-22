@@ -8,26 +8,27 @@
     ../../home/gtk.nix
     
     # Needed programs
+    ../../home/calendar
+    ../../home/rofi
     ../../home/vscode
     ../../home/waybar
-    ../../home/rofi
-    ../../home/calendar
-    
-    ../../home/messaging.nix
-    ../../home/utils.nix
-    ../../home/git.nix
-    ../../home/media.nix
-    ../../home/xdg.nix
-    ../../home/nvim
-    ../../home/spotify.nix
-    ../../home/gaming.nix
-    ../../home/shell
-    ../../home/security.nix
-    ../../home/ssh.nix
+
     ../../home/chrome.nix
+    ../../home/development.nix
+    ../../home/gaming.nix
+    ../../home/git.nix
     ../../home/kubernetes.nix
-    ../../home/slack.nix
+    ../../home/media.nix
+    ../../home/messaging.nix
+    ../../home/nvim
     ../../home/productivity.nix
+    ../../home/security.nix
+    ../../home/shell
+    ../../home/slack.nix
+    ../../home/spotify.nix
+    ../../home/ssh.nix
+    ../../home/utils.nix
+    ../../home/xdg.nix
   ];
 
   # Change your username ! 
