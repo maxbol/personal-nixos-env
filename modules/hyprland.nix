@@ -24,9 +24,10 @@
 
   services.xserver = {
     enable = true;
-    displayManager.gdm = {
-      enable = true;
-      wayland = true;
+    displayManager.sddm = {
+      theme = "corners";
+      # This is a fix for a huge onscreen keyboard appearing and hiding everything.
+      settings.General.InputMethod = "";
     };
 
     exportConfiguration = true;
@@ -52,11 +53,12 @@
     config.common.default = "*";
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-hyprland
+      inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland
     ];
   };
 
   environment.systemPackages = with pkgs; [
+    sddm-theme-corners
     swaybg
     mako
     libnotify
