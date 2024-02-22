@@ -58,7 +58,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    sddm-theme-corners
+    (callPackage ../pkgs/sddm-theme-corners.nix {})
     swaybg
     mako
     libnotify
